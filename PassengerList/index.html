@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of passengers for the trip</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-3 text-center text-primary">Passenger list</h1>
+          <form id="passenger-form" class="text-primary">
+            <div class="form-group">
+              <label for="firstName">Fist Name: </label>
+              <input type="text" id="firstName" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name: </label>
+              <input type="text" id="lastName" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="number">Passport number: </label>
+              <input type="text" id="number" class="form-control">
+            </div>
+            <input type="submit" value="Add Passenger" class="btn btn-primary btn-block">
+          </form>
+          <table class="table table-striped mt-5 text-primary">
+            <thead>
+              <tr>
+                <th>Fist Name</th>
+                <th>Last Name</th>
+                <th>Passport number</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="passenger-list"></tbody>
+          </table>
+      </div>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
